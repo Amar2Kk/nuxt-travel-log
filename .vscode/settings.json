@@ -9,6 +9,11 @@
     "source.organizeImports": "never"
   },
 
+  // tailwindcss support
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
     { "rule": "style/*", "severity": "off", "fixable": true },
@@ -46,5 +51,8 @@
     "scss",
     "pcss",
     "postcss"
+  ],
+  "cSpell.words": [
+    "tabler"
   ]
 }
