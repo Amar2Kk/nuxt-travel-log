@@ -3,7 +3,7 @@
     <div class="hero-content text-center min-h-96">
       <div class="max-w-md">
         <div class="flex items-center justify-center">
-          <Icon name="tabler:map-2" class="inline-block mr-2 text-primary-content" size="50"/>
+          <Icon name="tabler:map-2" class="inline-block mr-2 text-primary-content" size="50" />
           <h1 class="text-5xl font-bold text-accent">
             Travel Log
           </h1>
