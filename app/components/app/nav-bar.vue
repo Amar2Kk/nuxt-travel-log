@@ -8,6 +8,7 @@
         Sign in with Github
         <Icon name="tabler:brand-github" size="22" />
       </button>
+      <AppThemeToggler class="ml-4" />
     </div>
   </div>
 </template>
