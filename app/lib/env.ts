@@ -5,6 +5,8 @@ import tryParseEnv from "./try-parse-evn";
 
 const EnvSchema = z.object({
   NODE_ENV: z.enum(["development", "production"]),
+  TURSO_CONNECTION_URL: z.string(),
+  TURSO_AUTH_TOKEN: z.string(),
 
 });
 
