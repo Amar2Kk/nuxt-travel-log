@@ -1,12 +1,15 @@
-import { int, integer, real, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { int, real, sqliteTable, text } from "drizzle-orm/sqlite-core";
+
+import { user } from "./auth";
 
 export const location = sqliteTable("location", {
-  id: integer("id").primaryKey({ autoIncrement: true }),
+  id: int().primaryKey({ autoIncrement: true }),
   name: text().notNull(),
   slug: text().notNull().unique(),
   description: text(),
   lat: real().notNull(),
   lng: real().notNull(),
+  userId: int().notNull().references(() => user.id),
   createdAt: int().notNull().$default(() => Date.now()),
   updatedAt: int().notNull().$default(() => Date.now()).$onUpdate(() => Date.now()),
 });
